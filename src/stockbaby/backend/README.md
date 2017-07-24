@@ -1,2 +1,0 @@
-# StockBaby Backend
-

@@ -2,7 +2,7 @@
 
 from stockbaby.backend.scheduler.task_status import TaskStatus
 
-class Task():
+class InjestionTask(Task):
     def __init__(self, 
                  target=None, 
                  time_period=None, 
