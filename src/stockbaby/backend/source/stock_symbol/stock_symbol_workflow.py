@@ -17,9 +17,12 @@ class StockSymbolWorkflow(Workflow):
     def get_tasks(self):
     	return self.__tasks
 
+# Refactor to SpiderTask
 class StockSymbolSpiderTask():
     def __init__(self, trigger_datetime):
         self.trigger_datetime = trigger_datetime
+        self.source = TaskSource.STOCK_SYMBOL
+        self.action = TaskAction.SPIDER
         self.curr_status = TaskStatus.READY
 
     def run(self):
